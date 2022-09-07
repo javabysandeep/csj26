@@ -1,0 +1,21 @@
+- Variable : It is name given to a memory location address.
+- Uses of variable: It is used to store data inside the memory or access the existing data
+
+# Data type :
+- It specifies three things
+    - type of data that variable will hold
+    - size of the memory location. memory requirement
+    - It specifies range of allowed values that can be stored inside the variable
+* Types of data types available in java:
+1. byte - size: 1 byte, range: -128 to 127
+2. short - size: 2 bytes, range: -32768 to 32767
+3. int - size 4 bytes
+4. long  - size 8 bytes
+5. float - 4 bytes
+6. double - 8 bytes
+7. char - 2 bytes
+8. boolean - 1 byte
+
+How to create a variable?
+- dataType variableName = value;
+ e.g. int age = 50; // age is a variable, int is a data type, 50 is the value
