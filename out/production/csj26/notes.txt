@@ -19,3 +19,47 @@
 How to create a variable?
 - dataType variableName = value;
  e.g. int age = 50; // age is a variable, int is a data type, 50 is the value
+
+# Type casting for primitives:
+Type casting can be done for primitive as well as non-primitives.
+
+converting one data type value into another data type value.
+* Explicit typecasting - When we try to assign a bigger data type value to a smaller data type value then we have to perform explicit type casting
+    int intValue = 100;
+    byte byteValue = intValue;// we get compile time error
+    - We tell to the compiler we are fine with the data loss.
+
+    byte byteValue = (byte) intValue; // explicit type casting
+    - Developer is responsible for explicit type-casting
+
+* Implicit Type-casting :
+    - when we try to assign small data type value to bigger data type value
+    - Java compiler is responsible to perform implicit typecasting
+    - There won't be any data loss in case of implicit type-casting.
+          short shortValue = 100;
+          int a = shortValue; // implicit type casting is done by the java compiler
+
+
+explicit type casting --> upcasting, narrowing
+implicit type casting -->  downcasting, widing
+
+Autoboxing : converting primitive value into non-primitive
+Unboxing : converting non-primitive value into primitive
+
+
+# Operators
+1. Arithmetic operators : +, -, *, /, %
+    - + operator will do mathematical addition when both the operands are of number type
+2. String concatenation operator : +
+    - it is the only operator which is overloaded in java.[does two jobs]
+    - + will perform string concatenation when one of the operand is String type
+    * expression evaluation will start from left to right
+
+
+
+
+
+
+
+
+
