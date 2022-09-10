@@ -46,8 +46,9 @@ implicit type casting -->  downcasting, widing
 Autoboxing : converting primitive value into non-primitive
 Unboxing : converting non-primitive value into primitive
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Operators
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Arithmetic operators : +, -, *, /, %
     - + operator will do mathematical addition when both the operands are of number type
 2. String concatenation operator : +
@@ -55,11 +56,22 @@ Unboxing : converting non-primitive value into primitive
     - + will perform string concatenation when one of the operand is String type
     * expression evaluation will start from left to right
 
+
+#input for arithmetic operator will be number type and output will also be of number type
+
 --- Arithmetic operators are not applicable for boolean
 byte, short, int , char (+,-,*, /, %) byte, short, int , char ---> int
 byte, short, int , char, long (+,-,*, /, %) byte, short, int , char, long ---> long
 byte, short, int , char, long, float (+,-,*, /, %) byte, short, int , char, long,float ---> float
 byte, short, int , char, long, float,double (+,-,*, /, %) byte, short, int , char, long,float, double ---> double
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 3. Comparison Operators : > ,< , >= , <=, ==, !=
+ - These are applicable for number type.
+ - for boolean only == and != is applicable
+
+ output of Comparison operators : boolean
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
