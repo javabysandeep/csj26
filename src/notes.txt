@@ -1,0 +1,172 @@
+- Variable : It is name given to a memory location address.
+- Uses of variable: It is used to store data inside the memory or access the existing data
+
+# Data type :
+- It specifies three things
+    - type of data that variable will hold
+    - size of the memory location. memory requirement
+    - It specifies range of allowed values that can be stored inside the variable
+* Types of data types available in java:
+1. byte - size: 1 byte, range: -128 to 127
+2. short - size: 2 bytes, range: -32768 to 32767
+3. int - size 4 bytes
+4. long  - size 8 bytes
+5. float - 4 bytes
+6. double - 8 bytes
+7. char - 2 bytes
+8. boolean - 1 byte
+
+How to create a variable?
+- dataType variableName = value;
+ e.g. int age = 50; // age is a variable, int is a data type, 50 is the value
+
+# Type casting for primitives:
+Type casting can be done for primitive as well as non-primitives.
+
+converting one data type value into another data type value.
+* Explicit typecasting - When we try to assign a bigger data type value to a smaller data type value then we have to perform explicit type casting
+    int intValue = 100;
+    byte byteValue = intValue;// we get compile time error
+    - We tell to the compiler we are fine with the data loss.
+
+    byte byteValue = (byte) intValue; // explicit type casting
+    - Developer is responsible for explicit type-casting
+
+* Implicit Type-casting :
+    - when we try to assign small data type value to bigger data type value
+    - Java compiler is responsible to perform implicit typecasting
+    - There won't be any data loss in case of implicit type-casting.
+          short shortValue = 100;
+          int a = shortValue; // implicit type casting is done by the java compiler
+
+
+explicit type casting --> upcasting, narrowing
+implicit type casting -->  downcasting, widing
+
+Autoboxing : converting primitive value into non-primitive
+Unboxing : converting non-primitive value into primitive
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Operators
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Arithmetic operators : +, -, *, /, %
+    - + operator will do mathematical addition when both the operands are of number type
+2. String concatenation operator : +
+    - it is the only operator which is overloaded in java.[does two jobs]
+    - + will perform string concatenation when one of the operand is String type
+    * expression evaluation will start from left to right
+
+
+#input for arithmetic operator will be number type and output will also be of number type
+
+--- Arithmetic operators are not applicable for boolean
+byte, short, int , char (+,-,*, /, %) byte, short, int , char ---> int
+byte, short, int , char, long (+,-,*, /, %) byte, short, int , char, long ---> long
+byte, short, int , char, long, float (+,-,*, /, %) byte, short, int , char, long,float ---> float
+byte, short, int , char, long, float,double (+,-,*, /, %) byte, short, int , char, long,float, double ---> double
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 3. Comparison Operators : > ,< , >= , <=, ==, !=
+ - These are applicable for number type.
+ - for boolean only == and != is applicable
+
+ output of Comparison operators : boolean
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Assignment operator : =
+we use = operator, to assign the right hand side value to a variable to the left
+left operand must be a variable type otherwise we get compile time error
+right operand can be:
+    1. direct value
+    2. variable
+    3. expression
+    4. function call
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.  Logical operators:
+Logical AND: &, &&
+Logical OR: |, ||,
+Logical XOR: ^
+Logical NOT : !
+
+- AND, OR, XOR, NOT these are not keywords available in java.
+
+Pure logical operators : &&, ||
+
+What is the difference between & and &&?
+- & will solve all the conditions and at last will give the result.
+- && will give the result immediatlly after the first false.
+- && is called as short hand, short-circuit operator
+
+! Not operators works on only boolean
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unary Operators : Operators which works on only operand
+                   !
+Binary Operators : Operators which works on two operands
+                   - +, -, *, /, %, ==, !=, > ,< , >=, <=, &, &&, |, ||, ^
+Ternary Operators : Operators which works on three operands
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. Increment / Decrement operators:
+++, --
+These are also called as unary operators
+++ : increment the value by 1
+-- : decrement the value by 1
+
+Operand in the increment/decrement operation must be a variable otherwise we get CTE
+
+Pre-increment :
+    - When we use ++ operator before the operand, it is called as pre-increment.
+    - e.g. int a = 1; ++a; SOP(a);//2
+    - In this, we first increment the value by 1 ,and then we assign the value.
+Post-increment :
+    - When we use ++ operator after the operand, it is called as post-increment.
+    - e.g. int a = 1; a++; SOP(a);//2
+    - In this, we first assign the value and then increment the value by 1.
+
+Pre-Decrement :
+    - When we use -- operator before the operand, it is called as pre-decrement.
+    - e.g. int a = 1; --a; SOP(a);//0
+    - In this, we first decrement the value by 1 ,and then we assign the value.
+Post-Decrement :
+    - When we use -- operator after the operand, it is called as post-decrement.
+    - e.g. int a = 1; a--; SOP(a);//0
+    - In this, we first assign the value and then decrement the value by 1.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bitwise operators:
+& : AND
+|: OR
+^: XOR
+~: Negation
+<<: left shift
+>> : right shift
+>>>: unsigned right shift
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ternary operator: Which works on three operands
+
+Conditional Operator:
+
+operand1 ? operand2 : operand3
+
+operand1 : condition
+            1. direct value i.e. true or false
+            2. variable of type boolean
+            3. expression which results into boolean
+            4. function call which returns boolean
+Based on the condition, we get output.
+        If the condition is true, code after ? gets executed
+        If the condition is false, code after : gets executed
+
+In conditional operator,
+    input is a boolean value as operand1
+    output will be either operand2 which is followed ? or operand3 which is followed :
+
+
+
+
+
+
+
+
+
+
+
