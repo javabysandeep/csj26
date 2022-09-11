@@ -73,6 +73,97 @@ byte, short, int , char, long, float,double (+,-,*, /, %) byte, short, int , cha
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+4. Assignment operator : =
+we use = operator, to assign the right hand side value to a variable to the left
+left operand must be a variable type otherwise we get compile time error
+right operand can be:
+    1. direct value
+    2. variable
+    3. expression
+    4. function call
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.  Logical operators:
+Logical AND: &, &&
+Logical OR: |, ||,
+Logical XOR: ^
+Logical NOT : !
+
+- AND, OR, XOR, NOT these are not keywords available in java.
+
+Pure logical operators : &&, ||
+
+What is the difference between & and &&?
+- & will solve all the conditions and at last will give the result.
+- && will give the result immediatlly after the first false.
+- && is called as short hand, short-circuit operator
+
+! Not operators works on only boolean
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Unary Operators : Operators which works on only operand
+                   !
+Binary Operators : Operators which works on two operands
+                   - +, -, *, /, %, ==, !=, > ,< , >=, <=, &, &&, |, ||, ^
+Ternary Operators : Operators which works on three operands
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. Increment / Decrement operators:
+++, --
+These are also called as unary operators
+++ : increment the value by 1
+-- : decrement the value by 1
+
+Operand in the increment/decrement operation must be a variable otherwise we get CTE
+
+Pre-increment :
+    - When we use ++ operator before the operand, it is called as pre-increment.
+    - e.g. int a = 1; ++a; SOP(a);//2
+    - In this, we first increment the value by 1 ,and then we assign the value.
+Post-increment :
+    - When we use ++ operator after the operand, it is called as post-increment.
+    - e.g. int a = 1; a++; SOP(a);//2
+    - In this, we first assign the value and then increment the value by 1.
+
+Pre-Decrement :
+    - When we use -- operator before the operand, it is called as pre-decrement.
+    - e.g. int a = 1; --a; SOP(a);//0
+    - In this, we first decrement the value by 1 ,and then we assign the value.
+Post-Decrement :
+    - When we use -- operator after the operand, it is called as post-decrement.
+    - e.g. int a = 1; a--; SOP(a);//0
+    - In this, we first assign the value and then decrement the value by 1.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bitwise operators:
+& : AND
+|: OR
+^: XOR
+~: Negation
+<<: left shift
+>> : right shift
+>>>: unsigned right shift
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ternary operator: Which works on three operands
+
+Conditional Operator:
+
+operand1 ? operand2 : operand3
+
+operand1 : condition
+            1. direct value i.e. true or false
+            2. variable of type boolean
+            3. expression which results into boolean
+            4. function call which returns boolean
+Based on the condition, we get output.
+        If the condition is true, code after ? gets executed
+        If the condition is false, code after : gets executed
+
+In conditional operator,
+    input is a boolean value as operand1
+    output will be either operand2 which is followed ? or operand3 which is followed :
+
+
+
+
+
 
 
 
