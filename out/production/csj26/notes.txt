@@ -146,11 +146,74 @@ Ternary operator: Which works on three operands
 Conditional Operator:
 
 operand1 ? operand2 : operand3
+
 operand1 : condition
             1. direct value i.e. true or false
             2. variable of type boolean
             3. expression which results into boolean
             4. function call which returns boolean
+Based on the condition, we get output.
+        If the condition is true, code after ? gets executed
+        If the condition is false, code after : gets executed
+
+In conditional operator,
+    input is a boolean value as operand1
+    output will be either operand2 which is followed ? or operand3 which is followed :
+
+
+---------------------------------------------------------------------------------------------------
+Control statements : These are the statements which controls the flow of execution of the program
+- If we do not want sequential execution, then we take help of control statements.
+
+- control statements helps you
+    - select specific code to execute
+    - select specific code to skip the execution
+    - select specific code to repeat the execution
+
+1. Conditional Statements
+    - it helps to select some part of the code to execute or skipping
+    - if-else
+    - switch
+
+2. Looping / Repeat / Iterative statements
+    -  It helps in executing the code repeatedly.
+    - for
+    - while
+    - do-while
+    - for each
+
+3. Transfer statements
+    - It helps in transferring the control from one location to another location
+    - break
+    - continue
+    - return
+---------------------------------------------------------------------------------------------------
+if: it is keyword
+    if(condition){
+        // statements
+    }
+    condition :
+        1. it can be direct boolean value
+        2. it can be expression whose result it boolean e..g (4 >3)
+        3. it can be variable which is of type boolean
+        4. it can be a function call which returns boolean type data.
+        5. if write non-boolean value we get CTE.
+    If the condition is true, the only code inside the {} will be executed
+    If the condition is false, the  code inside the {} will not be executed
+
+- we can write independent if.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

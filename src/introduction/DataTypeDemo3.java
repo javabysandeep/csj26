@@ -1,3 +1,5 @@
+package introduction;
+
 public class DataTypeDemo3 {
     public static void main(String[] args) {
         byte b1 = (byte) 130;// 1byte, -128 to 127

@@ -1,3 +1,5 @@
+package operators;
+
 public class MathematicalOperations {
     public static void main(String[] args) {
         int number1 = 100;
@@ -36,7 +38,7 @@ public class MathematicalOperations {
         System.out.println("hello " + 23 + 25);//hello2325
         System.out.println(23 + 25 + "hello ");//48hello
 
-//        System.out.println("Hello"-23);//CTE
+//        System.out.println("introduction.Hello"-23);//CTE
         System.out.println(10-4);
     }
 }

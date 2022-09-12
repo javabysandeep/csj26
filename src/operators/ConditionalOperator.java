@@ -1,3 +1,5 @@
+package operators;
+
 public class ConditionalOperator {
     public static void main(String[] args) {
         String output = (false) ? "Its true" : "its false";
