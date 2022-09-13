@@ -202,6 +202,27 @@ if: it is keyword
     If the condition is false, the  code inside the {} will not be executed
 
 - we can write independent if.
+ we use if-else and switch to select some code to either execute or skip it for execution based some value.
+
+ if(true){ execute this}
+ if(flalse){ do not execute this code}
+
+ switch(value){
+    case :
+ }
+  In switch, we compare single value across multiple cases.
+  - doing equality operation
+
+We go with the switch when number of equality operations are more than 3.
+
+value :
+    - allowed values for switch value place : byte, short, int char, Byte, Short, Integer, Character, String, enum
+    - not allowed values : long, float, double, boolean, [Long, Float, Double, Boolean]
+
+switch case lables and value provided in the switch must be of same data type otherwise we get CTE
+_______________________________________________________________________________________________
+
+
 
 
 
