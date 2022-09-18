@@ -1,4 +1,4 @@
-package controlStatements;
+package controlStatements.conditional;
 
 public class SumOfDigits {
     public static void main(String[] args) {

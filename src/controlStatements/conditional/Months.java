@@ -1,4 +1,4 @@
-package controlStatements;
+package controlStatements.conditional;
 
 public enum Months {
     JAN,

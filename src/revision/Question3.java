@@ -1,6 +1,6 @@
 package revision;
 
-import controlStatements.Months;
+import controlStatements.conditional.Months;
 
 import java.util.Scanner;
 
