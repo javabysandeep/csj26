@@ -221,22 +221,137 @@ value :
 
 switch case lables and value provided in the switch must be of same data type otherwise we get CTE
 _______________________________________________________________________________________________
+Instance : It is an allocated memory space at runtime in the program.
+
+Class :
+- class is a keyword to create Class[classification]
+- Class is a classification , categorization, grouping
+- it is a plan, structure, template, blueprint, set of guidelines, set of rules to create objects
+- we need class first inorder to create objects.
+- we can create any number of objects with given class.
+- so class will occupy less memory as compared to objects.
+
+why do we need a class?
+- we need class to create objects
+
+How do we create a class?
+e.g. class ClassName {
+    // plan to create objects.
+    }
+
+Object:
+- it is an instance of a class
+- it is a memory space allocated at runtime for class type data.
+- when we say we are creating object, we are actually allocating the memory space at run time
+- Object is also called as instance
+- But every instance need not be an object.
+- Object is nothing but memory allocation.
+
+Why do we need object?
+- we need objects to store or represent real life physical or logical entities in the program at runtime
+
+Every object has
+    - state | variables | columns | attributes | data | properties |
+    - behaviour | method | functions | procedure | routine | task | implementation
+
+How do we create an object ?
+e.g. class Student {
+        int rollNumber;
+        String studentName;
+    }
+
+    Student student = new Student();
+
+    // Student : it is a derived data type
+    // student : it is a reference variable which stores address or reference of an object
+    // new : is a keyword to create object
+    // Student(): it is a constructor. It is used to construct  or create object.
+
+    new Student(): It is an object
+
+# As part of the class, we can write different components
+    - variables
+        - local variable
+        - instance variables
+        - static variables
+    - methods
+        - instance method
+        - static method
+    - constructors
+        - default constructors
+        - zero parameterized constructor
+        - parameterized constructor
+    - blocks
+        - instance block
+        - static block
+    - nested classes
+        - inner class i.e. non-static nested class
+        - static nested class
+        - local inner class
+        - anonymous class
 
 
+1. we write java program in file with .java extension
+2. we compile that .java file with java compiler
+3. once .java file is compiled there will a .class file will be generated.
+    - javac App.java
+4. we run the .class file. we specify the class name which has main method
+    - java App
+
+JDK : Java Development Kit
+- JDK helps in writing , compiling and executing the java applications.
+- Developer needs to use JDK
+
+JDK consists of compiler, libraries, JRE.
+JRE consists of JVM
+
+- We use java compiler  for compiling the java files
+- we use JRE in turn JVM for java program execution.
+
+What is the job of JVM?
+- To convert the byte code into machine understandable code.
+
+To execute the app : java ClassName
+
+What is JVM ?
+- Java virtual Machine
+- JVM is abstract machine
+- It is a software which is developed by Java people.
 
 
+when we run the java app,
+- JVM instance will be created, JVM will be started.
 
+Once JVM is started,
+    - ClassLoader: Loads the class into the memory.
+    - Byte Code Verifier : It verifies the byte code from the .class
+    - program is loaded into the different memory compartments.
+        - Memory compartments
+            - HEAP:
+                - It is used to store the java objects
+            - Stack
+                - It is used to store local variables.
+                - it is used the store method execution stack
+            - Class or Method Area
+                - It is used to store static variables
+                - it is used to store class or method structures.
+            - Native method Area
+                - It is used to store the data related to non-java method such C, C++
+            - Native Method Stack Area
+                - It is used to store the data and method execution stack for non-java methods
+            - PC Registers
+                - It is used to store the next execution instruction
 
+        * native method interface:
+            - it is a framework or program to get the methods from native library and load into native method area
+        * native methods : these are non-java code
+        * native library : it is place where non-java code is present.
+        * Java Execution Engine : Converts the code into machine understandable code.
 
-
-
-
-
-
-
-
-
-
+    Java Compilers:
+        - it compiles java source conde into byte code.
+    JIT(Just in time Compilers):
+        - They compile the byte code into the machine understandable code.
 
 
 
