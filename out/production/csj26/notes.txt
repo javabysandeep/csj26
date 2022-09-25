@@ -1,3 +1,89 @@
+Binary/Machine language [Low level Language]:
+- Binary Number system[ only 2 digits 0 and 1] base 2
+- problem with the binary is code is error-prone and difficult understand, write, debug
+- it takes a lot of time to write code
+- it will be expensive software
+- extensibility is hard
+- it is not user-friendly
+- we have to write a lot of code for simple requirements
+
+#Asembly language :
+- English like words, mnemonics e.g ADD NUM1, NUM2
+- Translator or assembler will translate the english code in binary.
+
+
+#High level programming language
+- C,C++, C#, Java
+- easy to understand for the developer.
+
+Computer : Compute[Process, Calculate]
+
+- What is Java?
+    -  it is high level programming language.
+
+- Language is the medium for the communication.
+- Every language has set of rules, grammar rules , set of characters,
+
+- programming is nothing but set of instructions given to computer.
+
+* Platform:
+- It is an environment which lets you execute the softwares.
+- Hardware platform: Machine
+- software platform : OS [Windows, mac, linux]
+Why Java?
+- Simple: a lot of complex concepts from C, C++ are removed
+- secure: no direct to access to memory locations, provided built-in security managers
+- platform independent
+- Write Code Once Run Anywhere[WORA]
+    App.java ---> JavaC --> Byte code .class ---> JVM --> Binary --> OS
+- Multithreaded: running multiple blocks of code at the same time.
+- high in performance : Multithreading, JIT[Just in Time Compiler]
+- Robust : Best in class exception, error handling, memory handling.
+- Dynamic : applications will be able to adapt
+- Object oriented : In java, everything is represented with help of class and object
+- portable
+
+# JDK, JRE, JVM
+Java Development Kit :
+- it is a software. [oracle.com]
+-it contains java compiler, profiler, debugger,
+- some libraries
+- Java Runtime Environment/Engine
+    - JRE contains Java Virtual Machine
+- we can use JDK for writing, compiling, debugging, executing the java applications
+- JDK will be used by developers.
+- We need JRE for execution which will be used end customer.
+
+# Steps to write to first java program
+Assumptions:
+    - we have machine with operating system.
+
+Step 1: Download and install JDK.[oracle.com]
+Step 2: Set path.
+        - it is optional if we are using IDE as IDE will itself set the temporary path
+        - Command prompt/ powershell/ terminal :
+            - These are the software present in the  OS which will help to interact with the OS.
+            - These are command based software to interact with OS
+          - If we want to give command[ compile java program with the help java compiler]
+            to the OS with the help of command prompt/terminal
+
+        To let Operating system know where is the java compiler, debugger, executor, we set the path
+        - Path setting is nothing but, location of the java binaries given to OS.
+
+Step 3: Write java code in a notepad and save the file with .java extension
+step 4: compile the java file with the help of java compiler
+        javac JavaFileName.java
+
+step 5: execute the java app
+        java ClassName
+
+
+------------------------------------------------------------------
+
+# How java works?
+App.java --> javac App.java --> generates the .class containing byte code--> java App
+
+
 - Variable : It is name given to a memory location address.
 - Uses of variable: It is used to store data inside the memory or access the existing data
 
@@ -221,22 +307,137 @@ value :
 
 switch case lables and value provided in the switch must be of same data type otherwise we get CTE
 _______________________________________________________________________________________________
+Instance : It is an allocated memory space at runtime in the program.
+
+Class :
+- class is a keyword to create Class[classification]
+- Class is a classification , categorization, grouping
+- it is a plan, structure, template, blueprint, set of guidelines, set of rules to create objects
+- we need class first inorder to create objects.
+- we can create any number of objects with given class.
+- so class will occupy less memory as compared to objects.
+
+why do we need a class?
+- we need class to create objects
+
+How do we create a class?
+e.g. class ClassName {
+    // plan to create objects.
+    }
+
+Object:
+- it is an instance of a class
+- it is a memory space allocated at runtime for class type data.
+- when we say we are creating object, we are actually allocating the memory space at run time
+- Object is also called as instance
+- But every instance need not be an object.
+- Object is nothing but memory allocation.
+
+Why do we need object?
+- we need objects to store or represent real life physical or logical entities in the program at runtime
+
+Every object has
+    - state | variables | columns | attributes | data | properties |
+    - behaviour | method | functions | procedure | routine | task | implementation
+
+How do we create an object ?
+e.g. class Student {
+        int rollNumber;
+        String studentName;
+    }
+
+    Student student = new Student();
+
+    // Student : it is a derived data type
+    // student : it is a reference variable which stores address or reference of an object
+    // new : is a keyword to create object
+    // Student(): it is a constructor. It is used to construct  or create object.
+
+    new Student(): It is an object
+
+# As part of the class, we can write different components
+    - variables
+        - local variable
+        - instance variables
+        - static variables
+    - methods
+        - instance method
+        - static method
+    - constructors
+        - default constructors
+        - zero parameterized constructor
+        - parameterized constructor
+    - blocks
+        - instance block
+        - static block
+    - nested classes
+        - inner class i.e. non-static nested class
+        - static nested class
+        - local inner class
+        - anonymous class
 
 
+1. we write java program in file with .java extension
+2. we compile that .java file with java compiler
+3. once .java file is compiled there will a .class file will be generated.
+    - javac App.java
+4. we run the .class file. we specify the class name which has main method
+    - java App
+
+JDK : Java Development Kit
+- JDK helps in writing , compiling and executing the java applications.
+- Developer needs to use JDK
+
+JDK consists of compiler, libraries, JRE.
+JRE consists of JVM
+
+- We use java compiler  for compiling the java files
+- we use JRE in turn JVM for java program execution.
+
+What is the job of JVM?
+- To convert the byte code into machine understandable code.
+
+To execute the app : java ClassName
+
+What is JVM ?
+- Java virtual Machine
+- JVM is abstract machine
+- It is a software which is developed by Java people.
 
 
+when we run the java app,
+- JVM instance will be created, JVM will be started.
 
+Once JVM is started,
+    - ClassLoader: Loads the class into the memory.
+    - Byte Code Verifier : It verifies the byte code from the .class
+    - program is loaded into the different memory compartments.
+        - Memory compartments
+            - HEAP:
+                - It is used to store the java objects
+            - Stack
+                - It is used to store local variables.
+                - it is used the store method execution stack
+            - Class or Method Area
+                - It is used to store static variables
+                - it is used to store class or method structures.
+            - Native method Area
+                - It is used to store the data related to non-java method such C, C++
+            - Native Method Stack Area
+                - It is used to store the data and method execution stack for non-java methods
+            - PC Registers
+                - It is used to store the next execution instruction
 
+        * native method interface:
+            - it is a framework or program to get the methods from native library and load into native method area
+        * native methods : these are non-java code
+        * native library : it is place where non-java code is present.
+        * Java Execution Engine : Converts the code into machine understandable code.
 
-
-
-
-
-
-
-
-
-
+    Java Compilers:
+        - it compiles java source conde into byte code.
+    JIT(Just in time Compilers):
+        - They compile the byte code into the machine understandable code.
 
 
 

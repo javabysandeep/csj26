@@ -1,3 +1,89 @@
+Binary/Machine language [Low level Language]:
+- Binary Number system[ only 2 digits 0 and 1] base 2
+- problem with the binary is code is error-prone and difficult understand, write, debug
+- it takes a lot of time to write code
+- it will be expensive software
+- extensibility is hard
+- it is not user-friendly
+- we have to write a lot of code for simple requirements
+
+#Asembly language :
+- English like words, mnemonics e.g ADD NUM1, NUM2
+- Translator or assembler will translate the english code in binary.
+
+
+#High level programming language
+- C,C++, C#, Java
+- easy to understand for the developer.
+
+Computer : Compute[Process, Calculate]
+
+- What is Java?
+    -  it is high level programming language.
+
+- Language is the medium for the communication.
+- Every language has set of rules, grammar rules , set of characters,
+
+- programming is nothing but set of instructions given to computer.
+
+* Platform:
+- It is an environment which lets you execute the softwares.
+- Hardware platform: Machine
+- software platform : OS [Windows, mac, linux]
+Why Java?
+- Simple: a lot of complex concepts from C, C++ are removed
+- secure: no direct to access to memory locations, provided built-in security managers
+- platform independent
+- Write Code Once Run Anywhere[WORA]
+    App.java ---> JavaC --> Byte code .class ---> JVM --> Binary --> OS
+- Multithreaded: running multiple blocks of code at the same time.
+- high in performance : Multithreading, JIT[Just in Time Compiler]
+- Robust : Best in class exception, error handling, memory handling.
+- Dynamic : applications will be able to adapt
+- Object oriented : In java, everything is represented with help of class and object
+- portable
+
+# JDK, JRE, JVM
+Java Development Kit :
+- it is a software. [oracle.com]
+-it contains java compiler, profiler, debugger,
+- some libraries
+- Java Runtime Environment/Engine
+    - JRE contains Java Virtual Machine
+- we can use JDK for writing, compiling, debugging, executing the java applications
+- JDK will be used by developers.
+- We need JRE for execution which will be used end customer.
+
+# Steps to write to first java program
+Assumptions:
+    - we have machine with operating system.
+
+Step 1: Download and install JDK.[oracle.com]
+Step 2: Set path.
+        - it is optional if we are using IDE as IDE will itself set the temporary path
+        - Command prompt/ powershell/ terminal :
+            - These are the software present in the  OS which will help to interact with the OS.
+            - These are command based software to interact with OS
+          - If we want to give command[ compile java program with the help java compiler]
+            to the OS with the help of command prompt/terminal
+
+        To let Operating system know where is the java compiler, debugger, executor, we set the path
+        - Path setting is nothing but, location of the java binaries given to OS.
+
+Step 3: Write java code in a notepad and save the file with .java extension
+step 4: compile the java file with the help of java compiler
+        javac JavaFileName.java
+
+step 5: execute the java app
+        java ClassName
+
+
+------------------------------------------------------------------
+
+# How java works?
+App.java --> javac App.java --> generates the .class containing byte code--> java App
+
+
 - Variable : It is name given to a memory location address.
 - Uses of variable: It is used to store data inside the memory or access the existing data
 
