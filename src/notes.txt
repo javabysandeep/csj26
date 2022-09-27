@@ -439,10 +439,41 @@ Once JVM is started,
     JIT(Just in time Compilers):
         - They compile the byte code into the machine understandable code.
 
+-----------------------------------------------------------------------------
 
+Class Components:
 
+1. Local variable:
+- it is used store the data which used to store temporary calculations in the program such
+- it is stored in stack memory area.
+- we create local variables inside the method, constructor, blocks
+- Local variables can't be accessed outside where they have defined.
+- Local variables will get the memory inside the stack memory area.
+- Local variables will get the memory whenever method, constructor or block is called
+- If we don't call the method, local variable will not be created.
+- at the method execution end, all the variables which are local to this method will be deleted.
 
+2. Instance variables:
+What? - variables which are created outside of method, constructor,block at class level are called as instance variables
+Why? - we use instance variables to store object specific information which is independent.
+    e.g. Account details for each customer.
+How? class Product{
+            int productId;
+            String productName;
+        }
+Where?- Instance variables will be stored as part an object inside the heap memory area
+How many times IV gets the memory?
+    - Every time we create object, instance variables will get the memory.
+- Instance variables will be removed once the object is destroyed.
 
+3. Static variables:
+What - It is a variable which is created outside all methods, constructor, blocks at class level with static keyword
+Why - We use static variables to store common data for all the objects
+How many times they get the memory: Static variables will get the memory only once at time of class loading
+when they will get the memory : at the time of class loading
+where they are stored? static variables are stored inside the CLASS or METHOD memory area
+How to access?
+- we access static variables with the help classname
 
 
 
