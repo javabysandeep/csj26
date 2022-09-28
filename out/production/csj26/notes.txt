@@ -476,6 +476,13 @@ How to access?
 - we access static variables with the help classname
 
 
+#To access instance variables we need object first
+# To access static variables we dont need object. We need class to be loaded in the memory
+
+
+
+
+
 
 
 

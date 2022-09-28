@@ -476,6 +476,51 @@ How to access?
 - we access static variables with the help classname
 
 
+#To access instance variables we need object first
+    Syntax: reference.InstanceVariableName
+
+# To access static variables we don't need object. We need class to be loaded in the memory
+    Syntax: ClassName.StaticvariableName
+
+# Local variables are defined or created inside the method and accessed directly without any reference or classname
+    syntax : variableName
+
+
+_____________________________________________________
+Every object has three things :
+    1. identity
+    2. state / variables / attributes / columns / data / information /
+    3. behaviour / function / task / routine / procedure / implementation / method
+
+What are methods ?
+    - group of statements which are enclosed inside the curly braces which has a name
+    - which returns some value [if no value then we write void]
+    - might accept input[parameters]
+        syntax:
+           access_specifer return_type  methodName(input parameters){
+            // group of statements
+            //return statement optional
+            }
+Why do we need methods?
+- we use methods for code reusability purpose
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
