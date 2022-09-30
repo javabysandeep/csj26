@@ -506,6 +506,32 @@ Why do we need methods?
 
 
 
+class components:
+variables
+    local variable : Tejal
+    instance variable : Rohit sagare
+    static variable : Akash Pawar
+methods
+    instance method : vaishnavi
+    static method : mrugnayani
+constructors
+    default constructor: sandesh
+    zero param constructors : mahesh
+    parameterzed: Yash
+    this keyword:  madhuri
+blocks
+    instance block : Nishant
+    static block: Rohit
+nested classes
+    inner classes: Onkar
+    static nested class : Anirudh
+    local inner class : Saurabh
+    anonymous class: Shivani
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
