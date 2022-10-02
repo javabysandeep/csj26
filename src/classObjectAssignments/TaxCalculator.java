@@ -12,6 +12,9 @@ public class TaxCalculator {
     }
 
     private static int calculateTax(int grossSalary, int saving) {
+        int ABC = 10;
+        int abc=10;
+
         int netTaxableAmount = grossSalary - saving;
         int tax = 0;
 
