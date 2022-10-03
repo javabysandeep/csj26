@@ -5,13 +5,40 @@ public class Product {
     String productName;
     int productPrice;
 
-    //zero param con
-    public Product() {
-        System.out.println("zero param");
+    //zero param
+    Product(){
+        productId = 1;
+        productName = "dummy";
+        productPrice= 10;
+        System.out.println("developer provided con");
     }
 
-    //parameterized constructor
-    public Product(int productId, String productName, int productPrice) {
 
+    public Product(int pId, String pName, int pPrice) {
+        productId = pId;
+        productName = pName;
+        productPrice = pPrice;
+    }
+
+    public Product(int productId) {
+        this.productId = productId;
+    }
+
+    public Product(int productId, String productName) {
+        this.productId = productId;
+        this.productName = productName;
+    }
+
+    public Product(int productId, int productPrice) {
+        this.productId = productId;
+        this.productPrice = productPrice;
     }
 }
+
+
+
+
+
+
+
+
