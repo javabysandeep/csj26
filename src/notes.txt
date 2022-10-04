@@ -529,15 +529,64 @@ nested classes
     anonymous class: Shivani
 
 ------------------------------------------------------------------------------------------------------------------------
+# What is instance block?
+    - It is a block of code written inside the curly braces which does not have
+        - name
+        - parameters
+        - access modifier
+        - return type
+    created at class level outside all other components
 
+# Why we use instance block?
+    - We use instance block for non-initialization activity such as logging, auditing
+        - maintaining the object count.
 
+# How to use instance block?
+- Instance block will always be executed when we create an object
+- We can create object with different constructor still instance block will be called irrespective of which constructor call
 
+* we can write any number of instance blocks,
+    but all the instance blocks will be combined and executed together for every object creation
 
+# What is static block?
+    - It is a block of code written inside the curly braces created with static which does not have
+        - name
+        - parameters
+        - access modifier except static
+        - return type
+    created at class level outside all other components
 
+# Why we use static block?
+    - We use static block for performing one-time activity such as
+        - connection to the database
+        - connection to the file
+        - connection to the server
+        - loading a bigger file in the program
 
+# How to use static block?
+- we create the block as static {}
+-  load the class in the memory
 
+* we can write any number of static blocks,
+    but all the static blocks will be combined and executed together for every object creation
 
+Static block will be executed only once at the time of class loading
 
+___________________________________________________________________________________________
+Nested classes : A class defined inside another class
+1. Non-static nested class or Inner class :
+    - A class defined inside another class without static modifier
+    - An inner class can't contain static members.
+
+2. static nested class
+    - A class defined inside another class with static modifier
+    - It can contain both static and non-static members
+
+3. Local Inner class
+    - A class defined inside the method without any modifier
+    - A Local Inner class can't contain static members.
+
+4. Anonymous [abstraction]
 
 
 
