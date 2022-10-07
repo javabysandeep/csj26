@@ -1,5 +1,7 @@
 package classComponents.nestedClasses;
 
+import java.util.ArrayList;
+
 public class NestedClassTest {
     public static void main(String[] args) {
         Outer outer = new Outer();
