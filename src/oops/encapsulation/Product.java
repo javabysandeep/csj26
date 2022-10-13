@@ -47,4 +47,17 @@ public class Product {
         this.productQuantity = productQuantity;
         this.productPrice = productPrice;
     }
+
+    public static void main(String[] args) {
+        Employee employee = new Employee();
+        employee.setAge(30);
+        employee.setEmployeeName("Sachin");
+        employee.setEmployeeId(1);
+        employee.setEmployeeSalary(3000);
+
+        System.out.println(employee.getEmployeeId());
+        System.out.println(employee.getEmployeeName());
+        System.out.println(employee.getAge());
+        System.out.println(employee.getEmployeeSalary());
+    }
 }

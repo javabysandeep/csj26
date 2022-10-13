@@ -587,6 +587,135 @@ Nested classes : A class defined inside another class
     - A Local Inner class can't contain static members.
 
 4. Anonymous [abstraction]
+___________________________________________________________________________________________
+
+OOPS:
+1. Encapsulation
+- what it is ?
+    - it is a process of binding data members and methods together
+- why to use this?
+    - to achieve data security
+    - to get better control on the data
+- how to achieve/ implement encapsulation in Java?
+    - we make data members private so that it cannot be accessed outside the class directly
+
+e.g. class Employee{
+        private int employeeId;
+        private String employeeName;
+
+        //public getters and setters method
+
+        public int getEmployeeId(){
+            return this.employeeId;
+        }
+
+        public String getEmployeeName(){
+            return this.employeeName;
+        }
+
+        public void setEmployeeId(int employeeId){
+             this.employeeId = employeeId;
+        }
+
+        public void setEmployeeName(String employeeName){
+             this.employeeName = employeeName;
+        }
+
+    }
+
+#2. Inheritance
+# What is it ?
+- It is process of inheriting/acquiring the
+    non-private, non-static & non-final members from one object into another object
+
+* Super/ Parent/ Base class :
+    - It is the class where we define the common methods and data.
+
+* Child / Sub / Derived class
+    - It is the class which inherits the Parent class
+
+
+# Inheritance represents which type of relationship?
+    - It represents IS-A type of relationship
+    - we read Child IS-A of type Parent
+
+# Why to use Inheritance?
+    - to reuse the code
+    - to avoid code duplication
+
+# How to use or implement inheritance in Java?
+    - we can use extends keyword to implement inheritance through classes
+    - we define a class with common data and methods
+    - we define another class which extends Parent class
+
+e.g. class Loan {
+        //common data
+        //common methods
+    }
+    class PersonalLoan extends Loan {
+
+    }
+
+# what are the type of inheritance ?
+1. Single Level inheritance
+    - In this one class extends only one another clas
+    - It is supported through classes
+    - e.g. class A {}
+        class B extends A {}
+
+
+2. Multi-Level inheritance
+     - In this one class extends only one another clas & that class extends another class & so on
+     - It is supported through classes
+      - e.g. class A {}
+            class B extends A {}
+            class C extends B {}
+            class D extends C {}
+
+3. Cyclic inheritance
+    - When one class tries to extend itself
+    - It is not support through classes
+    - If we try to do it gives CTE
+    e.g. class A extends A {}
+
+4. Multiple inheritance
+    - when one class extends more than one class then it is called as multiple inheritance.
+    - It is not supported through classes
+    - It is supported through interfaces
+    - If we try to do it with classes it gives CTE
+    - e.g.
+            class A {}
+            class B {}
+            class C extends A, B {} //CTE
+** What is diamond problem / ambiguity?
+** Why multiple inheritance is not supported through classes?
+    -- When one class tries to extend more than class,
+        if both the parents have the same set of members
+        then child class will get confuse which member to access
+    - So to avoid this confusion, ambiguity, multiple inheritance is not supported through classes in java
+
+
+5. Hybrid inheritance
+    - when we combine multiple inheritance with any other type
+    - it is not supported through classes.
+
+6. Hierarchical inheritance
+    -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
