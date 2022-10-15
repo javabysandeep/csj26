@@ -701,6 +701,13 @@ e.g. class Loan {
 
 6. Hierarchical inheritance
     -
+--------------------------------------------------------------------------------------------------------
+
+- Every constructor in java there is a first line in the constructor added implicitly
+    that is call to the parent class constructor.
+     --- super();
+
+
 
 
 
