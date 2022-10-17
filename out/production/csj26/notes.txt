@@ -706,11 +706,54 @@ e.g. class Loan {
 - Every constructor in java there is a first line in the constructor added implicitly
     that is call to the parent class constructor.
      --- super();
+--------------------------------------------------------------------------------------------------------
+OOPS 3: Polymorphism:
+Poly : many
+morph : forms, methods, procedure, tasks, behaviour, function,
+
+- What it is?
+    - It is an ability of an object to change its behaviour either at compile time or runtime.
+
+- what do you mean by behaviour change?
+    -  object can change the behavior either at Compile time or run time.
+    - it means having multiple methods with the same name but having with different implementation
 
 
+* When object changes it behaviour at compile time, it is called as
+    - compile time polymorphism
+    - static binding
+    - early binding
+    *** call to the method is decided at compile time.
+
+    Q. how to achieve compile time polymorphism?
+    Ans. Method Overloading
+
+* When object changes its behaviour at run time, it is called as
+    - run time polymorphism
+    - dynamic binding
+    - late binding
+    *** call to the method is decided at run time.
+
+    Q. how to achieve run time polymorphism?
+        Ans. Method Overriding
+
+* What do you mean binding?
+- Binding is nothing but deciding method call binding
+- we decide which method will be called while executing the application.
 
 
+## What is method overloading?
+-- Defining multiple methods with the
+    - same name
+    - different signature
+        - either different type of parameters
+        - or different number of parameters.
 
+    - either in the same class
+    - or in the child class
+
+- in method overloading, call to the method is decided at compile time.
+- Method return type will not be considered in method overloading
 
 
 
