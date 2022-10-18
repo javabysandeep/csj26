@@ -786,14 +786,63 @@ e.g. Parent class  --->    Child Class
     //protected ---> //protected, public
     //public ---->    //public
 
+--------------------------------------------------------------------------------------------------------
+OOPS:4 Abstraction
+
+- It is  a process of hiding the implementation details and just exposing the functionality.
+- abstract means INCOMPLETE
+- final means COMPLETE
+- we cannot use abstract and final together since they are opposite of each other.
+
+# Concrete Method: A method which has implementation or curly brace
+        e.g. class A {
+                //concrete method
+                void m1() {
+                    //method body
+                }
+            }
+
+# Concrete class: A class which can contain only concrete methods without any abstract modifier.
+
+# Abstract method :
+  - A method which is created without method body/curly braces with abstract keyword modifier
+        e.g. abstract int add(int a, int b);
+  - abstract methods cannot be defined inside the concrete class
+  - we can define abstract methods inside the abstract class or interface.
+
+# Abstract class :
+   - A class which is created with abstract keyword modifier
+   e.g.     abstract class ClassName {
+
+            }
+   - We can create empty abstract class.
+   - It is not mandatory to write abstract methods inside the abstract class.
+   - when one concrete class extends another abstract class,
+       - then with the inheritance, child class gets the abstract methods.
+       - we get compile time error. To resolve this error
+        - either make the child class abstract
+        - or override the abstract methods in the child class.
+
+** Abstract class can contain
+    - everything from concrete class
+    - abstract methods
+
+Q. can we create the object of an abstract class or interface?
+Ans.- No. Since by declaring the class abstract, class becomes incomplete.
+    - If we try to create object of an abstract class or an interface, we get
+        compile time exception called as "InstantiationException"
 
 
+Q. Can we write main method inside the abstract class and run it?
+Ans. Yes. we can run it also.
+
+Q. How can we call the constructor of an abstract class?
+Ans. We create the child class object and from child class constructor,
+    there will be call to the parent abstract class constructor
 
 
-
-
-
-
+Q. can we overload and override the abstract methods?
+Ans. we can overload as well as override the abstract methods.
 
 
 

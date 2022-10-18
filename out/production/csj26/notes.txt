@@ -741,6 +741,7 @@ morph : forms, methods, procedure, tasks, behaviour, function,
 - Binding is nothing but deciding method call binding
 - we decide which method will be called while executing the application.
 
+--------------------------------------------------------------------------------------------------------
 
 ## What is method overloading?
 -- Defining multiple methods with the
@@ -755,17 +756,89 @@ morph : forms, methods, procedure, tasks, behaviour, function,
 - in method overloading, call to the method is decided at compile time.
 - Method return type will not be considered in method overloading
 
+* We can define the method in the parent class
+    and same method in the child class with different signature
+    it is called as method overloading
+
+- Method overloading can happen in the same class as well as child class
+- we can overload
+    - private methods
+    - static methods
+    - final methods
+--------------------------------------------------------------------------------------------------------
+
+Method overriding:
+    - Defining a method in the child class with the
+        - same name
+        - same signature
+        - same return type
+        as of parent class method is called as method overriding
+
+- Method return type will be considered in case of Method overriding.
+- we cannot override
+    - private methods
+    - static methods
+    - final methods
+
+- For the access specifier we can do promotion not demotion
+e.g. Parent class  --->    Child Class
+    //default --->   //default, protected, public
+    //protected ---> //protected, public
+    //public ---->    //public
+
+--------------------------------------------------------------------------------------------------------
+OOPS:4 Abstraction
+
+- It is  a process of hiding the implementation details and just exposing the functionality.
+- abstract means INCOMPLETE
+- final means COMPLETE
+- we cannot use abstract and final together since they are opposite of each other.
+
+# Concrete Method: A method which has implementation or curly brace
+        e.g. class A {
+                //concrete method
+                void m1() {
+                    //method body
+                }
+            }
+
+# Concrete class: A class which can contain only concrete methods without any abstract modifier.
+
+# Abstract method :
+  - A method which is created without method body/curly braces with abstract keyword modifier
+        e.g. abstract int add(int a, int b);
+  - abstract methods cannot be defined inside the concrete class
+  - we can define abstract methods inside the abstract class or interface.
+
+# Abstract class :
+   - A class which is created with abstract keyword modifier
+   e.g.     abstract class ClassName {
+
+            }
+   - We can create empty abstract class.
+   - It is not mandatory to write abstract methods inside the abstract class.
+   - when one concrete class extends another abstract class,
+       - then with the inheritance, child class gets the abstract methods.
+       - we get compile time error. To resolve this error
+        - either make the child class abstract
+        - or override the abstract methods in the child class.
+
+** Abstract class can contain
+    - everything from concrete class
+    - abstract methods
+
+Q. can we create the object of an abstract class or interface?
+Ans.- No. Since by declaring the class abstract, class becomes incomplete.
+    - If we try to create object of an abstract class or an interface, we get
+        compile time exception called as "InstantiationException"
 
 
+Q. Can we write main method inside the abstract class and run it?
+Ans. Yes. we can run it also.
 
-
-
-
-
-
-
-
-
+Q. How can we call the constructor of an abstract class?
+Ans. We create the child class object and from child class constructor,
+    there will be call to the parent abstract class constructor
 
 
 
