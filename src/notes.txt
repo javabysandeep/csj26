@@ -844,8 +844,47 @@ Ans. We create the child class object and from child class constructor,
 Q. can we overload and override the abstract methods?
 Ans. we can overload as well as override the abstract methods.
 
+1. What is abstraction?
+2. What is concrete method?
+3. What is concrete class?
+4. What is abstract method?
+5. What is abstract class?
+6. Is it mandatory to write abstract methods inside the abstract class?
+    - No
+7. Can we create an object of an abstract class?
+    - No
+8. Can we write constructor,IV, IM, SV, SM, IB, SB, NC, IC inside the abstract class?
+    - Yes
+9. Can we define empty abstract class?
+    - Yes
+10. How can we call the constructor of abstract class?
+    - Create the child class object and from child class constructor call the parent class constructor
 
+11. What happens when one concrete class extends another abstract class?
+    - then with the inheritance, child class gets the abstract methods.
+    - we get compile time error. To resolve this error
+         - either make the child class abstract
+         - or override the abstract methods in the child class.
 
+12. Can we overload abstract methods?
+    - Yes
+13. Can we override abstract methods?
+    - Yes
+14. Can we make abstract methods as private?
+    - No
+15. Can we make abstract methods as static?
+    - No
+16. Can we make abstract methods as final?
+    - No
+17. Can we apply abstract keyword on variables?
+    - No
+18. Can we apply abstract keyword on constructor?
+    - No
+19. Can we apply abstract keyword on instance block?
+    - No
+20. What happens when one abstract class extends another abstract class?
+    - There won't be any compile time error.
+    - It is optional for the child abstract class to override the abstract methods.
 
 
 
