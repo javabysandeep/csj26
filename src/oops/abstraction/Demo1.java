@@ -9,6 +9,7 @@ public  class Demo1 {
         messageService.m1();
         MessageService.m2();
 
+
     }
 
 //    abstract void m1();
