@@ -1,6 +1,4 @@
-package oops.abstraction;
-
-import java.util.Arrays;
+package oops.abstraction.abstractClassDemos;
 
 public class MessageServiceImpl extends MessageService {
 

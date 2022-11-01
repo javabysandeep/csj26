@@ -886,6 +886,88 @@ Ans. we can overload as well as override the abstract methods.
     - There won't be any compile time error.
     - It is optional for the child abstract class to override the abstract methods.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Abstraction :
+    - hiding of implementation details and exposing the functionality
+    - to achieve abstraction we have abstract class and interface concept
+    - with abstract class we cannot achieve 100% abstraction.
+        - because in abstract class we can non-abstract method as well.
+    - we cannot achieve multiple inheritance thorough abstract class.
+
+interface :
+- Uses of interface:
+    - to achieve 100% abstraction
+    - and support multiple inheritance we can use interface concept
+
+- What is an interface?
+    - it is a keyword using which we can create interface.
+    - it is a fully unimplemented class.[ it is incomplete class]
+    - Since it is incomplete,
+        - we will have only abstract methods [till Java 7]
+        - we cannot create the object of this.
+        - After java 8, along with abstract methods,
+            we can have default methods and static methods in the interface
+    e.g.
+        interface InterfaceName {
+
+        }
+        interface MessageService {
+
+        }
+
+Q. Does interface creates the .class file when compiled? Yes
+
+Q. What all things we cannot write inside the interface in Java 8?
+Ans. As part of an interface, we cannot write
+    - instance variables
+    - instance methods
+    - instance block
+    - Inner class
+    - constructor
+    - static block
+    - Why we cannot have these components inside the interface?
+        - To support multiple inheritance.
+
+
+Q. What all things we can write inside the interface in Java?
+Ans.
+    - As part of Java 7 we can have
+        - only abstract methods
+        - variables of static final
+
+    - As part of Java 8 we can have
+        - abstract methods
+        - variables of static final
+        - default methods
+        - static methods
+
+# By default variables inside the interface are public static final
+# By default methods inside the interface are public abstract
+# By default nested classes inside the interface are public static
+
+
+Valid scenarios:
+1. One concrete/abstract class extends another concrete/abstract class
+2. One concrete/abstract class implements another interface
+3. one interface extends another interface
+
+InValid scenarios:
+1. one class extends interface
+2. one interface extends another class
+3. one interface implements another interface
+4. one interface implements another class.
+
+# when any concrete class implements an interface,
+  - then it is compulsory for the child concrete class
+    to override/implement the all abstract methods from interface
+
+ # when any abstract class implements an interface,
+  - then it is optional for the child concrete class
+    to override/implement the all abstract methods from interface
+
+
+
+
 
 
 

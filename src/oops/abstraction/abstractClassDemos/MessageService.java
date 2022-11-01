@@ -1,4 +1,4 @@
-package oops.abstraction;
+package oops.abstraction.abstractClassDemos;
 
 public abstract class MessageService {
     int instanceVariable = 100;
