@@ -977,6 +977,44 @@ InValid scenarios:
     - we can use @FunctionalInterface annotation on the interface[optional]
 
 Assignment: Find 20 predefined functional interface from Java 7 and Java 8
+    1. Comparable
+    2. Comparator
+    3. Consumer
+    4. Suppiler
+    5. Predicate
+    6. Function
+    7  BinaryOperator
+    8. DoubleBinaryOperator
+    9. BooleanSupplier
+    10. DoubleConsumer
+    11. DoubleFunction
+    12. DoublePredicate
+    13. DoubleSupplier
+
+Q. can we  make abstract method  as private inside the interface? no
+Q. can we  make abstract method  as static inside the interface? no
+Q. can we  make abstract method  as final inside the interface? no
+
+- What do you mean by implementing an interface or abstract class?
+- We create concrete child class and override the abstract methods
+
+# Anonymous class:
+- It is a class which does not have a name.
+- For anonymous class we define the class and create object of the class in the same line.
+Q. Why to use Anonymous class?
+Ans. We use anonymous class to give implementation for abstract class or interfaces.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
