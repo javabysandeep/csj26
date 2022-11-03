@@ -1005,6 +1005,146 @@ Q. Why to use Anonymous class?
 Ans. We use anonymous class to give implementation for abstract class or interfaces.
 
 
+________________________________________________________________________________________________________________________
+Revision
+
+Abstraction : hiding of implementation[method body] and exposing the functinality
+
+How do we achieve the abstraction?
+1. Abstract class
+2. interface
+
+
+- concrete method : method with body
+						void m1(){
+							SOP(“Hello”);
+						}
+
+- concrete class : a class which contains only concrete methods
+
+- abstract method: method which is created without body and with abstract modifier
+
+					abstract void m1();
+	- we can’t write abstract methods inside the concrete class
+
+# abstract class : class created with abstract modifier
+
+					abstract class ClassName {
+
+					}
+
+
+- We can write the abstract methods either in the abstract class or interface.
+
+-** abstract means INCOMPLETE
+
+- We cannot create the object of an abstract class as well as interface.
+
+
+- What all components we can write inside the abstract class?
+	- We can write all the components from concrete class as well as abstract methods.
+
+
+- is it compulsory to write abstract methods inside the abstract class or interface?
+	- it is not compulsory. We can have empty class
+
+Can we write main method inside the AC and run that? Yes.
+
+
+- whenever a concrete class extends abstract class,
+	then it is compulsory for child class to override
+	all abstract methods from parent abstract class.
+
+
+
+- whenever an abstract class extends another abstract class,
+	then it is optional for child class to override
+	all abstract methods from parent abstract class.
+
+
+
+
+Can we create object of an abstract class? No.
+Then how can we call constructor of an AC?
+	- we create the child class object,
+		then from child class constructor
+	 there will be call to the Parent class constructor
+
+With abstract class we can’t achieve
+	1. 100% abstraction as we can have non-abstract methods in AC
+	2. Multiple inheritance is not supported.
+———————————————————————————————————————————————————————————————————————————————————————————————————
+
+Anonymous class:
+- it is a class without name.
+- We use anonymous class for implementing abstract classes or interfaces.
+- Since anonymous class don’t have name,
+	we have combine the class definition and object creation
+———————————————————————————————————————————————————————————————————————————————————————————————————
+
+interface: fully unimplemented class i.e. INCOMPLETE class
+	- it is a keyword using which we can create the interface
+	- interface is a fully unimplemented class.
+	- it will have only abstract methods till java 7
+	- From Java 8, we can have
+		- abstract methods
+		- default methods
+		- static methods
+
+- Since it is incomplete, we can’t create the object of an interface.
+
+- if we try to create object of an abstract class or interface
+	 we get one compile time exception InstatiaionException
+
+- why do we need interface?
+	1. To support 100% abstraction
+	2. To support Multiple inheritance.
+
+* what is “implements” keyword?
+- We use it to implement an interface.
+
+What do mean by implementing an interface?
+- We create a subclass with implements keyword and
+	override the abstract methods
+
+	class Child implements ParentInterface {
+		// override abstract methods
+	}
+
+Valid cases:
+1. One class extends another class
+2. One class implements another interface
+3. One interface extends another interface.
+
+Invalid cases:
+1. One class extends another interface
+2. One interface extends another class
+3. One interface implements another interface.
+
+
+Q. How multiple inheritance is supported through interfaces?
+A. One class can implement multiple interfaces
+	e.g.
+		interface I1 {}
+		interface I2 {}
+		class Child implements I1, I2{}
+	- To support multiple inheritance, interface cannot contain
+		- IV, IM, IB, SB, IC, Constructor
+
+
+By default,
+	variables are public static final
+	methods are public abstract
+	nested classes are public static
+
+
+# When one concrete class implements an interface,
+then it is mandatory for the child class to override all the abstract methods
+
+# When one abstract class implements an interface,
+then it is optional for the child class to override all the abstract methods
+
+
 
 
 
