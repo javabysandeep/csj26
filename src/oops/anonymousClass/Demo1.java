@@ -19,3 +19,23 @@ public class Demo1 {
         messageServiceInterface.sendMessage();
     }
 }
+@FunctionalInterface//SAM
+interface A{
+    void m1();
+//    void m46();
+    default void m2(){}
+    default void m5(){}
+    default void m6(){}
+    default void m7(){}
+    default void m8(){}
+    default void m9(){}
+    static void m3(){}
+    static void m10(){}
+//    void m2();
+}
+
+
+
+
+
+

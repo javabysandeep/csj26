@@ -1008,7 +1008,7 @@ Ans. We use anonymous class to give implementation for abstract class or interfa
 ________________________________________________________________________________________________________________________
 Revision
 
-Abstraction : hiding of implementation[method body] and exposing the functinality
+Abstraction : hiding of implementation[method body] and exposing the functionality
 
 How do we achieve the abstraction?
 1. Abstract class
@@ -1143,16 +1143,43 @@ then it is mandatory for the child class to override all the abstract methods
 
 # When one abstract class implements an interface,
 then it is optional for the child class to override all the abstract methods
+____________________________________________________________________________________________________________________________________________________________________________________
+#Functional Interface:
+- it is a new feature of Java 8.
+- An interface which contains Single Abstract Method(SAM)
+	- any number of default methods
+	- any number of static methods
+- We can mark functional interface with @FunctionalInterface annotation
+- If we write 	@FunctionalInterface over the functional interface,
+	- if we introduce new abstract method inside the interface we get compile time error
+	e.g.
+		@FunctionalInterface
+		interface I {
+			void m1();
+		}
 
+Q. What are the different ways to implement a functional interface?
+    1. Traditional way
+        - create a separate subclass and override the method
+        e.g.
+        interface I{
+            void m1();
+        }
 
+        class A implements I {
+            void m1(){}
+        }
 
+        I i = new A();
+        i.m1();
 
+    2. Using Anonymous class
+        interface I{
+                    void m1();
+                }
 
-
-
-
-
-
+        I i  = new I() { void m1(){} };
+        i.m1();
 
 
 
