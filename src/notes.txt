@@ -1181,6 +1181,97 @@ Q. What are the different ways to implement a functional interface?
         I i  = new I() { void m1(){} };
         i.m1();
 
+    3. Using Lambda expression
+        interface I{
+                 void m1();
+           }
+
+        I i = () -> {};
+
+__________________________________________________________________________________________________________________________________________
+Q. Java 7 interface what all things we can write?
+Ans.
+	1. Only abstract methods
+	2. Variables will be public static final
+
+
+Q. Java 8 interface what all things we can write?
+Ans.
+	1. Abstract methods : public abstract
+	2. public/protected Default methods
+	3. public static methods
+
+Q. Java 9 interface what all things we can write?
+Ans.
+	1. Default methods
+	2. public Static methods
+	3. Abstract methods
+	4. Private instance methods:
+		- we call private instance methods from public default methods
+	5. Private Static methods
+		-we call private static methods from public static methods
+__________________________________________________________________________________________________________________________________________
+
+We can implement normal interfaces using
+    - subclass way
+    - anonymous class way
+
+** We can implement Function interface using
+    1. subclass way
+    2. anonymous class way
+    3. Lambda expression
+----------------------------------------------------------------------------------------------------------------
+Lambda Expression:
+    - it is a java 8 feature
+    - it is one of the way to implement Functional interface.
+    - using lambda we can implement the FI in precise and short manner
+
+    - it is an anonymous function which represents abstract method implementation
+    - we can pass lambda as an argument to the method
+    - we can return lambda from a method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
