@@ -16,13 +16,4 @@ public class Demo2 {
         System.out.println(way3.add(10,20));
     }
 }
-interface Addition{
-    int add(int number1, int number2);
-}
 
-class AddImpl implements  Addition{
-    @Override
-    public int add(int number1, int number2) {
-        return number1+number2;
-    }
-}
