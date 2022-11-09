@@ -1230,11 +1230,45 @@ Lambda Expression:
     - we can pass lambda as an argument to the method
     - we can return lambda from a method
 
+________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+final:
+    - it is a keyword in java which means complete and no more change allowed
+    - it is applicable for variables, methods and classes
+
+final variables
+    - if we use final keyword with the variable then that variable value cannot be changed or reassigned.
+    - we can make local, instance and static variables as final
+    - we cannot just declare the final variables there value must be assigned before they are used.
+    - if we make instance variables final then there value can be initialized only once
+        - directly in the same line or inside the constructor or inside the block
+        - if we do it all three places will get CTE
+    - if we make static variables as final as its value must be initialized either in the same line or in the static block
+
+    * if we make reference variable final then its value cannot be changed or reassigned
+        but the object it points can be changed.
+
+final method
+    - if method is made final then that method cannot be overriden
 
 
+final class
+    - if a class is made final then that class cannot be extended
 
 
+IQ: difference between final, finalize & finally
+    - final is a keyword which we can apply on variables,methods & classes
+    - finalize is a method present inside the Object class
+    - finally is block in exception handling which we use to write clean up code
 
+_____________________________________________________________________________________________________________________
+
+call by value and call by reference
+
+**  Java is strictly call by value
+
+call by value means we call methods by passing values
+call by reference means we call methods by passing actual reference
 
 
 
