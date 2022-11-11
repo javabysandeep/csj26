@@ -1282,8 +1282,8 @@ Object class:
 
   methods os Object class:
       public final native java.lang.Class<?> getClass();
-      public native int hashCode();
       public boolean equals(java.lang.Object);
+      public native int hashCode();
       public java.lang.String toString();
       protected void finalize() throws java.lang.Throwable;
       protected native java.lang.Object clone() throws java.lang.CloneNotSupportedException;
@@ -1295,7 +1295,7 @@ Object class:
       public final void wait() throws java.lang.InterruptedException;
 
 # getClass method:
-    - it is final and native method so we cannot overide
+    - it is final and native method, so we cannot override
     - it returns the object of a class called Class.
     - using class Class reference we can call getName()
         to get the name of class with complete package name as well
@@ -1305,14 +1305,42 @@ Object class:
     - if the references are equal it will return true else returns false.
     - we can override the equals method
     - if we override the equals then always child class method will be called.
-        public boolean equals(Object obj) {
-            return (this == obj);
+
+        Object equals method :
+            public boolean equals(Object obj) {
+                return (this == obj);
+            }
+
+
+# hashCode():
+    - it is a native method { it is non-java method}
+    - since it is a non-final method we can override this method
+    - hash { means small unique number/string}
+    - hashing : converting bigger string into smaller string
+    - every object in java means memory allocation, it will be stored inside the memory, it will have certain memory address
+    - developer do not have access to the original memory address as java does not support pointers
+
+    original memory address ---> hashing ---> integer[hashcode]
+    - hashcode is not the direct memory address
+    - it is just an integer which is calculated based on the memory address.
+
+
+# toString();
+       - toString returns a string value which contains
+            - complete class name along with package
+            - @
+            - Hexa decimal conversion of hashCode
+                Integer.toHexString(hashCode());
+
+       - internally it calls the getClass().getName() which returns complete class name & package name
+       - internally it calls the hashCode method
+       - same hashcode is then converted into hexadecimal format
+
+        - toString method is automatically called whenever we try to print the reference variable
+
+    public String toString() {
+            return getClass().getName() + "@" + Integer.toHexString(hashCode());
         }
-
-
-
-
-
 
 
 

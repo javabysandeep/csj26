@@ -11,22 +11,5 @@ public class Student {
         this.name = name;
     }
 
-    // student1.equals(null);
-    @Override
-    public boolean equals(Object passedObject) {
-        if (this == passedObject) return true;
 
-        if (passedObject == null || getClass() != passedObject.getClass()) return false;
-
-
-        Student student = (Student) passedObject;
-        return id == student.id;
-    }
-
-
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
 }
