@@ -1342,7 +1342,16 @@ Object class:
             return getClass().getName() + "@" + Integer.toHexString(hashCode());
         }
 
+# finalize():
+    - it is a method present in the Object class and method is empty
+    -  Garbage : unused or unreferenced objects
+    - Garbage collector:
+        - it is the background[daemon thread] which cleans or frees the unused or unreferenced objects
+    We can call explicitly garbage collector
+      - System.gc();
 
+  - finalize method will be called by garbage collector just before object gets deleted
+  - we use finalize to have some clean up code or some auditing , logging
 
 
 
