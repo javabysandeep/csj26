@@ -1353,11 +1353,63 @@ Object class:
   - finalize method will be called by garbage collector just before object gets deleted
   - we use finalize to have some clean up code or some auditing , logging
 
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
+Array :
 
 
+Problem:
+    - if we want to store multiple values then we have to create these many variables
+    - managing, accessing, retrieving, maintaining all these variables will be a challenge
+    - it will increase the length of the code and it will be inefficient code
 
+Solution:
+    - By using array we can store multiple values of the same type in continuous memory locations efficiently
+
+
+What is an Array?
+- it is an non-primitive or reference type or derived data type
+- it is a collection of elements [homogeneous] of same type which are stored in continuous memory locations
+
+
+why to use array?
+- to store multiple values of same type in continuous memory locations
+
+How to use array?
+- when we know the elements directly then
+    int[] numbers = {1,2,,4,5};
+
+- when we don't the elements but we know the count
+   datatype[] arrayName = new datatype[size];
+   e.g.
+    int[] array = new int[5];
+       -int : is the type of elements that array is going to store
+       -[] : is the notation to say it is array variable. we don't write anything in the LHS[]
+       - array : is the reference variable name which points to an object which contains all elements stored sequentially
+       - new : is keyword to create object
+       - int[5]: 5 specifies the size of array or number of elements that array can store
+
+
+** whenever an array is created then there is an object created and that object contains all the elements
+- if we try to create an array with negative size we get RTE called NegativeArraySizeException
+
+- it is compulsory to specify the size of an array otherwise we get CTE
+- we can create an array with zero size
+   e.g. int[] array1 = new int[0];
+     int[] array2 = {};
+
+- all the array elements will be initialized with default value.
+
+- if we try to print the array reference variable,
+        its toStrong method will be called &
+        its hexadecimal hashcode will be printed
+
+####
+    - length is a variable created for every array.
+    - length is a instance variable
+    - length represents the size of an array
+    System.out.println(array.length);//gets the size of an array
 
 
 
