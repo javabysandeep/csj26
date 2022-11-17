@@ -15,6 +15,7 @@ public class Demo2AccessElements {
             System.out.println(array[index]);
         }
 
+        System.out.println(array[-1]);
 
 
     }

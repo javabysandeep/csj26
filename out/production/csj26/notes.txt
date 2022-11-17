@@ -1411,6 +1411,22 @@ How to use array?
     - length represents the size of an array
     System.out.println(array.length);//gets the size of an array
 
+# Accessing the array elements
+- we can access array elements with the help of index
+- First element in the array is stored at base address which is pointed by array reference
+- Index helps in finding the location of an element in the array.
+  - index is a absolute measure to specify how far the element is from base address.
+  - array index starts from zero.
+
+  Address of an element = BASE_ADDRESS + DATA_TYPE_SIZE * INDEX;
+          First element = Base address;
+
+# Range of index
+    0 to [ arrayLength -1 ]
+
+-if we try to access the index which is not in the range/boundary of an array we get
+        ArrayIndexOutOfBoundsException.
+
 
 
 
