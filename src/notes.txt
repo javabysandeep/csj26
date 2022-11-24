@@ -1427,9 +1427,26 @@ How to use array?
 -if we try to access the index which is not in the range/boundary of an array we get
         ArrayIndexOutOfBoundsException.
 
+-------------- Revision 24th Nov 2022 ----------------------
+What is array?
+Why do  we use array?
+How do we the array?
 
+	datatype[] arrayName = new dataType[SIZE];
+	array elements can be accessed with the help of index and it starts from 0.
 
+	Memory address of given element in the array = BASE_ADDRESS  + DATA_TYPE_SIZE * INDEX;
+		INDEX: is the absolute unit which represents how far the element is from base address
 
+Drawbacks of array?
+	- either wastage or shortage of memory
+	- we can store only homogeneous elements
+	- no method support  for CRUD[Create, Read, Update, Delete] operations
+	- developer is responsible for every requirement such as add new element into the array, delete, search, sort…
+
+# Multi-Dimensional Array
+
+Array which contains another array as its elements is called as multi-dimensional array
 
 
 
