@@ -1448,6 +1448,30 @@ Drawbacks of array?
 
 Array which contains another array as its elements is called as multi-dimensional array
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# String Handling
+
+* Introduction to String class:
+
+- String class is provided by Java and present inside the java.lang package
+- It is a final class which implmenets Serailizable, Comparable and CharSequence
+- It is also immutable class.**
+    - A class which is final
+    - Data members are private
+    - No public setter methods are provided
+    - Once we create an object of Immutable class then we cannot change the state of an object
+    - We cannot modify the immutable class object
+- We use String class to represent group of characters efficiently
+- We can represent group of characters with the help of String enclosed in double quotes
+- String class internally maintains the private array of characters to store the strings
+- String class provides several utility methods to manipulate the strings.
+    - convert the string into uppercase
+    - convert the string into lowercase
+    - remove the spaces leading and trailing
+    - replacing the strings
+
+* How to create String class objects?
 
 
 
