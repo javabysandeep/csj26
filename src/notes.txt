@@ -1452,6 +1452,8 @@ Array which contains another array as its elements is called as multi-dimensiona
 
 # String Handling
 
+
+
 * Introduction to String class:
 
 - String class is provided by Java and present inside the java.lang package
@@ -1472,6 +1474,44 @@ Array which contains another array as its elements is called as multi-dimensiona
     - replacing the strings
 
 * How to create String class objects?
+Ans. There are two ways:
+    1. new keyword
+        - String str = new String("abc");
+    2. using literal way
+        - String str = "abc";
+
+* What is SCP?
+Ans.- SCP stands for String Constant Pool Memory area
+    - SCP is a special memory area created under Heap from java 7 to store only String objects
+    - Inside the SCP only String can be stored.
+    - String object creation in SCP is conditional.
+
+* What is the difference between object creation using literal way and new keyword way?
+Ans.
+Using new keyword :
+    - String objects will be created compulsory inside the heap memory area without any object content check
+    - objects will be created also inside the SCP if the object is not present there
+    - references will point to the string objects from Heap and not to the SCP
+
+Using literal way:
+    - String objects will not be created inside the HEAP
+    - String Objects will be created inside the SCP if the object is not present
+    - If the object is already present inside the SCP, no new object will be created
+    - References will point to the String objects from SCP not to the Heap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
