@@ -1499,10 +1499,43 @@ Using literal way:
     - If the object is already present inside the SCP, no new object will be created
     - References will point to the String objects from SCP not to the Heap
 
+________________________________________________________________________________________________________________________________________________________________________
+            Exception Handling
+
+
+Explain default exception handling.
+- SOP(10/0);
+step 1: identify the problematic situation .i.e. exception occurred
+step 2: create the exception object of the corresponding situation class
+step 3: write the exception details to the object such as
+        where and why exception has occurred or situation details
+step 4: throw exception object or pass the exception object to the JRE
+step 5: JRE looks for the developer provided exception handler
+        if it is not there then exception object will be
+        handovered to the default exception handler
+step 6: default exception handler will print the exception details
+        and terminate the program abnormally
 
 
 
+# Explain exception hierarchy
+Throwable is extended by Exception and Error
+Exception class is extended by RuntimeException
 
+# Checked exceptions or compile time exceptions
+    - these problematic situations come at compilation time
+    - these are called as checked exceptions
+    - all those classes which extends Exception class are called as checked exception or compile time exceptions
+    examples:
+
+# UnChecked exceptions or Run time exceptions
+    - these problematic situations come at execution or run time
+    - these are called as unchecked exceptions
+    - all those classes which extends either RuntimeException
+        or Error class are called as unchecked exception or
+        run time exceptions
+
+    examples:
 
 
 
