@@ -1537,7 +1537,19 @@ Exception class is extended by RuntimeException
 
     examples:
 
+__________________________________________________________________________________________________
 
+File Handling
+
+File:
+- it is a predefined class present in java.io package
+- it will help us in
+    - creating new file/ new folder
+    - rename a file/folder
+    - delete file/folder
+    - get permissions for a file
+    - set permission for a file
+    - we can't read or write directly with the file class
 
 
 
