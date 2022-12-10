@@ -1550,18 +1550,89 @@ File:
     - get permissions for a file
     - set permission for a file
     - we can't read or write directly with the file class
+    - for every file we need to work we need to have a separate java file class object
+
+Stream:
+    - it is a logical connection between source and destination
+    - based on the data we carry we have two types streams
+    - Byte oriented streams
+    - Character oriented streams
+
+# Byte Oriented streams
+   - In order read or write to different sources, destinations in the form bytes we have
+
+    - InputStream(AC)
+        - FileInputStream : We use this class to read from a file in terms of bytes
+        - BufferedInputStream : We use this class to read from a buffer in terms of bytes
+        - ObjectInputStream : We use this class to read java object from a file[De-serialization]
+
+    - OutputStream(AC)
+        - FileOutputStream : We use this class to write to a file in terms of bytes
+        - BufferedOutputStream : We use this class to write to a buffer in terms of bytes
+        - ObjectOutputStream : We use this class to write java object to a file [serialization|
+
+# Character Oriented streams
+   - In order read or write to different sources, destinations in the form characters we have
+
+    - Reader(AC)
+        - FileReader : We use this class to read from a file in terms of characters
+        - BufferedReader : We use this class to read from a buffer in terms of characters
+
+    - Writer(AC)
+        - FileWrite : We use this class to write to a file in terms of characters
+        - BufferedWriter : We use this class to write to a buffer in terms of characters
+
+# Serializable(I) : marker interface
+    - it is an empty interface.
+
+# Serialization :
+    - It is a process of saving the java objects in the file permanently
+    - To save the java objects in the file we need to make sure the class is of type Serializable
+    - To save object in the file we use: ObjectOutputStream
+    - We get NotSerializableException when we try to save object in the file which is not of type Serializable
+    - static members wont be serialized
+
+# De-Serialization :
+    - It is a process of reading the java objects from the file
+    - To read the java objects from the file we need to make sure the class is of type Serializable
+    - To read object from the file we use: ObjectInputStream
+
+# transient keyword
+    - we use transient keyword on instance variables to avoid saving it in the file in serialization process
 
 
+# keywords
+   - data types[13]
+        - byte, short, int, long, float,
+        - double, char, boolean, null, true,
+        - false, void, enum
 
+   - file level []
+        - package, import
+        -
+   - control statements [11]
+        - if, else, switch, continue, break,
+        - return, default, case, while, for,
+        - do
 
+   - access specifier/modifier [18]
+        - public, private, protected, static, final,
+        - this, super, abstract, interface, class,
+        - extends, implements, synchronized, transient, volatile
+        - new, instanceof, native
 
+    - exception handling [5]
+        - try, catch, finally, throw, throws
 
+    - unused keyword [2]
+        - goto
+        - const
 
+    - unit [2]
+        - assert
+        - strictfp
 
-
-
-
-
+**************************************************************************************************************************************************************************************
 
 
 
