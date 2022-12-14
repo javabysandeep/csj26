@@ -1633,6 +1633,59 @@ Stream:
         - strictfp
 
 **************************************************************************************************************************************************************************************
+Process: It is an application which is in execution
+Multi-tasking:
+    - doing multiple tasks at the same time.
+    - multi-tasking can happen at either OS level or program level
+    - multiprocessing:
+        - running multiple processes at the same time
+        - it happens at OS level
+    - Multithreading :
+        - running multiple blocks of code at the same time.
+        - Thread[block of code]
+        - in any application[process] there will be minimum of one thread.
+
+# Context switching:
+    - switching from one process to another process
+    - while doing the context switch there will be a process state save
+        - process state: [no.of registers, port on which it is running]
+    - context switch is expensive for processes as each process has separate memory area
+    - context switch is less expensive for threads as threads share the common memory
+
+# How to create an multi-threaded application in java?
+- To create multi-threaded application we use
+    - Thread(c)
+    - Runnable(FI)
+    - ThreadGroup
+    - These classes and interfaces are present in java.lang package
+
+# Thread:
+    - it is a block of code
+    - independent execution path
+    - it is class also present inside java.lang package
+    - by default there is one thread i.e. main thread is created by JVM
+    - exception in one thread will not cause abnormal termination in other threads
+    - for every thread there will be separate method execution stack
+
+   class Thread implements Runnable {
+        Runnable target;
+
+        Thread( Runnable target){
+            this.target = target;
+        }
+
+        void run(){
+             if(target !=null){
+                    target.run();
+                }
+             }
+        }
+
+   }
+
+
+
+
 
 
 
