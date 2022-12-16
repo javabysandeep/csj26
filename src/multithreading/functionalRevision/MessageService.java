@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 abstract class MessageService {
     // concrete class + abstract methods

@@ -1,11 +1,11 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 import classObjectAssignments.Sum;
 
 public class SumOfAddition {
     int start;
     int end;
-    static int counter=0;
+    int counter=0;
 
     SumOfAddition(int start, int end) {
         this.start = start;
@@ -15,6 +15,7 @@ public class SumOfAddition {
     void add() {
         for (int i = start; i <=end ; i++) {
             counter++;
+            System.out.println(counter);
         }
     }
 

@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 @FunctionalInterface
 public interface MusicService {

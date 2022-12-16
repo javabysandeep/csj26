@@ -1637,10 +1637,10 @@ Process: It is an application which is in execution
 Multi-tasking:
     - doing multiple tasks at the same time.
     - multi-tasking can happen at either OS level or program level
-    - multiprocessing:
+    - multi-processing:
         - running multiple processes at the same time
         - it happens at OS level
-    - Multithreading :
+    - Multi-threading :
         - running multiple blocks of code at the same time.
         - Thread[block of code]
         - in any application[process] there will be minimum of one thread.
@@ -1683,8 +1683,31 @@ Multi-tasking:
 
    }
 
+# Thread(C):
+    - it is concrete class present in java.lang package and implements Runnable
+    - To create user-defined threads we will be using Thread class
 
+# What are the different ways to create thread?
+    1. using Thread class
+    2. using Runnable interface
 
+# How to create thread using Thread class?
+Ans.
+    1. create a java class which extends Thread
+    2. create a instance of that class
+    3. call the start method on it
+    4. By default any use defined thread name begins : Thread-0, Thread-1 ....
+
+#start() method:
+    - it is an instance method of Thread class
+    - it registers the thread with the Thread scheduler
+    - it internally calls run() method
+    - it makes the thread execution concurrent
+    - if we skip the start() method directly call the run() method it will be a single thread application
+
+# what happens when we bypass the start() method and call run() method?
+- It will be single threaded application
+- no new thread will be created
 
 
 

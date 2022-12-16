@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 import java.util.function.Function;
 import java.util.function.Predicate;

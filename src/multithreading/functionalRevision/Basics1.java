@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 public class Basics1 {
     public static void main(String[] args) {

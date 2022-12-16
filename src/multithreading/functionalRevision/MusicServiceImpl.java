@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 public class MusicServiceImpl implements MusicService{
 

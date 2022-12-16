@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 class MessageServiceImpl extends MessageService{
 

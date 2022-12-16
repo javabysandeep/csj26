@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.functionalRevision;
 
 import java.time.LocalDateTime;
 
@@ -13,7 +13,8 @@ public class SumDemo {
         s2.add();
 
         LocalDateTime endTime = LocalDateTime.now();
-        System.out.println("Counting completed "+endTime);
+        System.out.println("Counting completed " + endTime);
+        System.out.println(s1.counter + s2.counter);
 
     }
 }
