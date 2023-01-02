@@ -1709,11 +1709,87 @@ Ans.
 - It will be single threaded application
 - no new thread will be created
 
+------------------------------------------------------------------------------------------------------------------------------
 
+Collection Framework:
 
+Iterable : it is a functional interface(SAM)
+            Iterator iterator();
 
+Iterator: It is an interface consists of two abstract methods
+            - boolean hasNext()
+            - Object next()
 
+# How to implement Iterator?
+    - create a separate subclass and override the abstract
+    - create an anonymous class
 
+    class IteratorImpl implements Iterator {
+           @Override
+            public boolean hasNext() {
+                        return false;
+            }
+
+            @Override
+            public Object next() {
+                return null;
+            }
+        }
+
+        Iterator iterator = new Iterator()
+        {
+               @Override
+                public boolean hasNext() {
+                            return false;
+                }
+
+                @Override
+                public Object next() {
+                    return null;
+                }
+        }
+
+# Collection(I) extends Iterable(I):
+1. A collection represents a group of objects, known as its elements.
+2. This interface is a member of the Java Collections Framework.[java.util]
+3. The root interface in the collection hierarchy.
+4. Some collections allow duplicate[List, Queue] elements and others do not[Set].
+5. Some are ordered [List] and others unordered[Set].
+6. The JDK does not provide any direct implementations of this interface:
+7. There is no direct implementation for Collection, Its sub-interfaces are implemented.
+8. This interface is typically used to pass collections around and manipulate them where maximum generality is desired.
+9. It is up to each collection to determine its own synchronization policy. [Vector]
+10. Collection elements will be compared with the help of equals();
+
+# methods of collection:
+  public interface java.util.Collection<E> extends java.lang.Iterable<E> {
+    public abstract boolean add(E);
+    public abstract boolean addAll(java.util.Collection<? extends E>);
+
+    public abstract boolean remove(java.lang.Object);
+    public abstract boolean removeAll(java.util.Collection<?>);
+    public boolean removeIf(java.util.function.Predicate<? super E>);
+    public abstract void clear();
+
+    public abstract int size();
+    public abstract boolean isEmpty();
+
+    public abstract boolean contains(java.lang.Object);
+    public abstract boolean containsAll(java.util.Collection<?>);
+
+    public abstract java.util.Iterator<E> iterator();
+
+    public abstract java.lang.Object[] toArray();
+    public abstract <T> T[] toArray(T[]);
+
+    public abstract boolean retainAll(java.util.Collection<?>);
+    public abstract boolean equals(java.lang.Object);
+    public abstract int hashCode();
+    //java 8 default methods:
+        public java.util.Spliterator<E> spliterator();
+        public java.util.stream.Stream<E> stream();
+        public java.util.stream.Stream<E> parallelStream();
+  }
 
 
 
