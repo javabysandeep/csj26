@@ -26,6 +26,7 @@ public class ArrayListDemo3 {
 
         System.out.println("No.of elements in the collection "+arrayList.size());
         System.out.println(arrayList);
+        System.out.println(arrayList.contains("string"));
     }
 
 }

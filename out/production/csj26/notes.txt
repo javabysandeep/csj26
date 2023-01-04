@@ -1763,20 +1763,26 @@ Iterator: It is an interface consists of two abstract methods
 
 # methods of collection:
   public interface java.util.Collection<E> extends java.lang.Iterable<E> {
-    public abstract int size();
-    public abstract boolean isEmpty();
-    public abstract boolean contains(java.lang.Object);
-    public abstract java.util.Iterator<E> iterator();
-    public abstract java.lang.Object[] toArray();
-    public abstract <T> T[] toArray(T[]);
     public abstract boolean add(E);
-    public abstract boolean remove(java.lang.Object);
-    public abstract boolean containsAll(java.util.Collection<?>);
     public abstract boolean addAll(java.util.Collection<? extends E>);
+
+    public abstract boolean remove(java.lang.Object);
     public abstract boolean removeAll(java.util.Collection<?>);
     public boolean removeIf(java.util.function.Predicate<? super E>);
-    public abstract boolean retainAll(java.util.Collection<?>);
     public abstract void clear();
+
+    public abstract int size();
+    public abstract boolean isEmpty();
+
+    public abstract boolean contains(java.lang.Object);
+    public abstract boolean containsAll(java.util.Collection<?>);
+
+    public abstract java.util.Iterator<E> iterator();
+
+    public abstract java.lang.Object[] toArray();
+    public abstract <T> T[] toArray(T[]);
+
+    public abstract boolean retainAll(java.util.Collection<?>);
     public abstract boolean equals(java.lang.Object);
     public abstract int hashCode();
     //java 8 default methods:
@@ -1784,6 +1790,65 @@ Iterator: It is an interface consists of two abstract methods
         public java.util.stream.Stream<E> stream();
         public java.util.stream.Stream<E> parallelStream();
   }
+
+# List implementations [ArrayList, LinkedList, Vector, Stack] follows
+    - will have duplicate elements
+    - will maintain insertion order
+    - can store homogeneous as well as heterogeneous data
+    - can store any number of null
+
+# what is ArrayList and how it works?
+- it is class java.util pkg and implements List(I)
+- it works on growable array data structure.
+    - internally it maintains array to store the objects
+    - once initial capacity array is fulled then new array will be created
+    - old array content will be copied into new array
+    - new array capacity  = old_capacity * 1.5 + 1
+    - default capacity = 10
+- it is not thread safe class.
+- Best for  retrival of data [ objects are stored in sequential memory locations]
+- worst for modification of data [ for insertion and deletion of objects shifting of elements will happen ]
+
+# what is Vector and how it works?
+- it is class java.util pkg and implements List(I)
+- it works on growable array data structure.
+    - internally it maintains array to store the objects
+    - once initial capacity array is fulled then new array will be created
+    - old array content will be copied into new array
+    - new array capacity  = old_capacity * 2
+    - default capacity = 10
+- it is thread safe class legacy class
+- Best for  retrival of data [ objects are stored in sequential memory locations]
+- worst for modification of data [ for insertion and deletion of objects shifting of elements will happen ]
+
+# what is Stack and how it works?
+- it is class java.util pkg and extends Vector(C)
+- it works on stack[LIFO] and growable array data structure.
+    - internally it maintains array to store the objects
+    - once initial capacity array is fulled then new array will be created
+    - old array content will be copied into new array
+    - new array capacity  = old_capacity * 2
+    - default capacity = 10
+- it is thread safe class legacy class
+- Best for  retrival of data [ objects are stored in sequential memory locations]
+- worst for modification of data [ for insertion and deletion of objects shifting of elements will happen ]
+- It provides some extra methods for LIFO operations such as PUSH, POP, PEEK.
+
+# what is LinkedList and how it works?
+- it is class java.util pkg and implements List(I)
+- it works on doubly linked list data structure .
+    - internally it maintains doubly linked list of nodes[Objects]
+    - for every new object to be inserted it will create a node and will create the references
+    - Node contains [Prev, Data, Next]
+    - there is no concept of default capacity.
+- it is not thread safe class
+- Best for modification of data
+    - to insert or delete we just need to adjust the pointers
+    - there will not be any shifting of elements
+- Worst for  retrival of data
+    - since in the linked list we have two pointers i.e. head and tail
+    - to access any element we have to start traversing from head
+
 
 
 

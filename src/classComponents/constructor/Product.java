@@ -6,11 +6,11 @@ public class Product {
     int productPrice;
 
     //zero param
-    Product(){
+    public Product(){
         productId = 1;
         productName = "dummy";
         productPrice= 10;
-        System.out.println("developer provided con");
+//        System.out.println("developer provided con");
     }
 
 
