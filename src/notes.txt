@@ -1853,6 +1853,35 @@ Iterator: It is an interface consists of two abstract methods
 
 
 
+Collection Framework:
+
+Collection(I),:
+    add(Object)
+    addAll(Collection)
+    remove(object), remove(index)
+    removeAll(collection)
+    clear()
+    removeIf(Predicate)
+    size()
+    contains(Object)
+    containsAll()
+    isEmpty()
+    toArray()
+
+Collections(C): sort
+Collections.sort(list --> Comparable)
+
+List                 Set     Queue
+ArrayList
+Vector
+Stack - LIFO
+LinkedList
+
+
+
+
+
+
 
 
 
