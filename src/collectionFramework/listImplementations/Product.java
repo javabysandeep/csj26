@@ -1,4 +1,4 @@
-package collectionFramework;
+package collectionFramework.listImplementations;
 
 public class Product{
     private int productId;

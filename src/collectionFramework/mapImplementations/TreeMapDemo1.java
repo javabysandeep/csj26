@@ -6,16 +6,18 @@ import java.util.TreeMap;
 
 public class TreeMapDemo1 {
     public static void main(String[] args) {
+        //if the key is already there then value be updated
+        // when new entry is added with the same key
+        //insertion order in LHM
         Map map = new TreeMap();
-        System.out.println("size of a map " + map.size());
-
-        // keys should be unique, homo, no null insertion
-        //for TreeMap, sorting order of keys  will be maintained
-        //there is no restriction for values
-        map.put("A", 50);
-        map.put("xyz", 50);
-        map.put("mnp", 50);
-        map.put("false", 50);
+        map.put(1, "abc");
+       // map.put(null, null);//NPE
+       // map.put(null, null);
+        map.put(2, null);
+        map.put(1, "xyz");
+        map.put(1, "pqr");
+        map.put(1, "value will be updated");
         System.out.println(map);
+
     }
 }

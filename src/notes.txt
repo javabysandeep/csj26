@@ -1876,14 +1876,55 @@ ArrayList
 Vector
 Stack - LIFO
 LinkedList
+_________________________________________________________________________________________________________________________________________________
+# cursors are used to retrieve the elements from given collection
+# There are three types of cursors:
+        - Iterator(I)
+        - ListItertator(I)
+        - Enumaration(I)
+
+# Enumeration(I):
+    - it is an interface present inside the java.util package
+    - it has two methods:
+        - boolean hasMoreElements();
+        - Object nextElement();
+    - It is applicable for Vector, HashTable keys and some legacy classes
+    - It helps us in retrieving the elements from given Legacy class one by one in forward direction only
+    - It reads the element and move the cursor to the next element
+    - While reading the data, we cannot modify, remove or replace the objects
+    - to get the implementation[object of type Enumaration] we use elements() method.
+    - elements() method is present inside Vector
+                Enumeration<Integer> enumeration = vector.elements();
+                while (enumeration.hasMoreElements()){
+                    System.out.println(enumeration.nextElement());
+                }
+
+# Iterator(I):
+    - it is an interface present inside the java.util package
+    - it has three methods:
+        - boolean hasNext();
+        - Object next();
+        - void remove();
+    - It is applicable for all collection implementing classes
+    - It helps us in retrieving the elements from given collection one by one in forward direction only
+    - It reads the element and move the cursor to the next element
+    - While reading the data, we can remove the object
+    - to get the implementation[object of type Iterator] we use iterator() method.
+    - iterator() method is present inside all Collection implementations
+                 Iterator<Integer> iterator = vector.iterator();
+                        while (iterator.hasNext()){
+                            Integer integer = iterator.next();
+                            if(integer%2==1){
+                                //remove the element
+                                iterator.remove();
+                            }
+                            System.out.println(integer);
+                        }
 
 
 
-
-
-
-
-
+# ListIterator(I):
+- it helps in retrieving the data as well modify, remove, add objects while reading
 
 
 

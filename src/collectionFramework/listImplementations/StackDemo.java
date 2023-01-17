@@ -1,4 +1,4 @@
-package collectionFramework;
+package collectionFramework.listImplementations;
 
 import java.util.Stack;
 
