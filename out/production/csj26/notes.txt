@@ -1876,10 +1876,28 @@ ArrayList
 Vector
 Stack - LIFO
 LinkedList
+_________________________________________________________________________________________________________________________________________________
+# cursors are used to retrieve the elements from given collection
+# There are three types of cursors:
+        - Iterator(I)
+        - ListItertator(I)
+        - Enumaration(I)
 
-
-
-
+# Enumeration(I):
+    - it is an interface present inside the java.util package
+    - it has two methods:
+        - boolean hasMoreElements();
+        - Object nextElement();
+    - It is applicable for Vector, HashTable keys and some legacy classes
+    - It helps us in retrieving the elements from given Legacy class one by one in forward direction only
+    - It reads the element and move the cursor to the next element
+    - While reading the data, we cannot modify, remove or replace the objects
+    - to get the implementation[object of type Enumaration] we use elements() method.
+    - elements() method is present inside Vector
+                Enumeration<Integer> enumeration = vector.elements();
+                while (enumeration.hasMoreElements()){
+                    System.out.println(enumeration.nextElement());
+                }
 
 
 
