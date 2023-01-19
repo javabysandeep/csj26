@@ -1,8 +1,6 @@
 package collectionFramework.cursors;
 
-import java.util.Iterator;
-import java.util.ListIterator;
-import java.util.Vector;
+import java.util.*;
 
 public class ListIteratorDemo {
     public static void main(String[] args) {
@@ -29,6 +27,7 @@ public class ListIteratorDemo {
                 listIterator.remove();
             }
             System.out.println(integer);
+            Collections.synchronizedList(new ArrayList<>());
         }
 
     }
