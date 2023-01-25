@@ -21,8 +21,9 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student delete(Integer studentId) {
-        return null;
+    public boolean delete(Integer studentId) {
+        Student student = studentList.get(studentId);
+        return studentList.remove(student);
     }
 
     @Override
@@ -32,6 +33,6 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public List<Student> findAll() {
-        return null;
+        return studentList;
     }
 }
