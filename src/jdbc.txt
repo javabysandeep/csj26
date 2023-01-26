@@ -1,0 +1,51 @@
+# Steps to connect to the Database from Java Application:
+
+1. Load and register the Drivers with DriverManager.
+    - Load the driver class [A class that implments the java.sql.Driver(I)] in the memory
+    - Once Driver class is loaded in the memory, static block of that class will be executed
+    - static block
+        static {
+            DriverManager.registerDriver(new Driver());
+        }
+    - After java 7, loading & registering the drivers with DriverManager happens automatically.
+        - If the jar file is added to the classpath[project] then it will be loaded.
+    - Before Java 7, we have to explicitly load the class in the memory
+        - Class.forName("complete class name with package");
+
+2. Get Connection from DriverManager
+    - Connection connection = DriverManager.getConnection(url, username, password);
+        - Connection(I) provided by java.sql
+        - Object of type Connection : DriverManager.getConnection(url, username, password) provides the object of type Connection which is provided by vendor
+
+3. Execute the queries and store the result
+        - To execute the query we have to create object of type Statement[]
+        - Statement statement = connection.createStatement();
+            - Statement(I) provided by java.sql
+            - connection.createStatement();-- object of type Statement provided by vendor
+
+        - ResultSet resultSet = statement.executeQuery("SELECT * from student");
+            - ResultSet(I) present in java.sql
+            - statement.executeQuery()- object of type ResultSet provided by vendor
+
+4. Use the Result
+    - resultSet.next(): --> returns true or false.
+    - get columns : resultSet.getXXX(1);
+    - get columns : resultSet.getXXX("columnName");
+5. Close the connection
+    - connection.close();
+
+
+ # Different types of SQL queries
+ - SELECT : executeQuery();
+ - DML[INSERT, UPDATE, DELETE] : executeUpdate();
+    - to execute multiple DML commands : executeBatch()
+ - DDL [CREATE, DROP, ALTER, TRUNCATE] : execute();
+
+* executeQuery(), executeUpdate(), executeBatch(), execute() are methods present in Statement(I)
+    and these methods are implemented by vendor
+
+
+
+
+
+
